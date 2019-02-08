@@ -1,14 +1,69 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(250, 247, 247);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+/* TOP NAV */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul > li {
+  max-height: 15px;
+  width: 150px;
+}
+
+nav ul > li:hover {
+  background-color: aquamarine;
+}
+
+nav ul > li > a {
+  color: rgb(21, 21, 21);
+  text-decoration: none;
+  font-size: 25px;
+}
+
+/* SLIDES */
+.slides {
+  display: flex;
+  justify-content: center;
+}
+
+.slides, nav ul {
+  padding: 0;
+}
+
+.slides li {
+  width: 100%;
+  border: 2px solid rgba(73, 13, 99, 0.9);
+  min-height: 100px;
+  color: rgb(249, 249, 249);
+  display: none;
+}
+
+/* The :target CSS pseudo-class represents a unique element 
+(the target element) with an id matching the URL's fragment. */
+.slides li:target {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* SLIDES ANIMATION */
+#slide1 {
+  background-color: rgb(25, 82, 25);
+}
+
+#slide2 {
+  background-color: rgb(25, 41, 82);
+}
+
+#slide3 {
+  background-color: rgb(82, 29, 25);
 }
