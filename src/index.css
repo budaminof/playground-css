@@ -33,6 +33,10 @@ nav ul > li > a {
 .slides {
   display: flex;
   justify-content: center;
+  height: 80vh;
+  width: 80vw;
+  margin: 0 auto;
+  margin-top: 5vh;
 }
 
 .slides, nav ul {
@@ -41,10 +45,15 @@ nav ul > li > a {
 
 .slides li {
   width: 100%;
-  border: 2px solid rgba(73, 13, 99, 0.9);
   min-height: 100px;
-  color: rgb(249, 249, 249);
+  color: rgb(21, 21, 21);
+  font-size: 25px;
   display: none;
+}
+
+.slides li p {
+  display: flex;
+  align-items: center;
 }
 
 /* The :target CSS pseudo-class represents a unique element 
@@ -54,16 +63,14 @@ nav ul > li > a {
   justify-content: center;
 }
 
-
-/* SLIDES ANIMATION */
 #slide1 {
-  background-color: rgb(25, 82, 25);
+  background-color: rgb(183, 223, 216);
 }
 
 #slide2 {
-  background-color: rgb(25, 41, 82);
+  background-color: rgb(146, 135, 187);
 }
 
 #slide3 {
-  background-color: rgb(82, 29, 25);
+  background-color: rgb(233, 197, 135);
 }

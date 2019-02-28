@@ -14,9 +14,9 @@ class App extends Component {
         </nav>
 
         <ul className="slides">
-          <li id="slide1">SLIDE 1</li>
-          <li id="slide2">SLIDE 2</li>
-          <li id="slide3">SLIDE 3</li>
+          <li id="slide1"><p>I am the first slide</p></li>
+          <li id="slide2"><p>I am the second slide</p></li>
+          <li id="slide3"><p>I am the third slide</p></li>
         </ul>
       </div>
     );
